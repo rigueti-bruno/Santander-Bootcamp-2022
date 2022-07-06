@@ -9,13 +9,13 @@ const getCats = async() => {
 };
 
 const loadImg = async() => {
-    const catImg = document.getElementsById('gato');
+    const catImg = document.getElementsById('cat');
     catImg.src = await getCats();
 };
 
 loadImg();
 
-const catBtn = document.getElementById('trocar');
+const catBtn = document.getElementById('change-cat');
 catBtn.addEventListener('click', loadImg);
 
 loadImg();
